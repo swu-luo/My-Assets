@@ -11,7 +11,7 @@ struct MyAssetsApp: App {
     
     init() {
         #if DEBUG
-        CloudKitSchemaInitializer.runIfRequested(containerID: "iCloud.com.jaydenirwin.myassets", types: [Asset.self, Debt.self, Stock.self, UpcomingSpend.self, Income.self, Expense.self, CreditCard.self])
+        CloudKitSchemaInitializer.runIfRequested(containerID: "iCloud.com.jaydenirwin.myassets", types: [Asset.self, Debt.self, Stock.self, UpcomingSpend.self, Income.self, Expense.self, CreditCard.self, SpendingCategory.self])
         #endif
         UserDefaults.standard.register()
     }
